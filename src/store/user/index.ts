@@ -3,19 +3,21 @@ import userGet, {
   stop as userGetStop,
   success as userGetSuccess,
   error as userGetError,
-} from "./get";
+} from "./slices/get";
 import userLogin, {
   start as userLoginStart,
   stop as userLoginStop,
   success as userLoginSuccess,
   error as userLoginError,
-} from "./login";
+} from "./slices/login";
 import userRegister, {
   start as userRegisterStart,
   stop as userRegisterStop,
   error as userRegisterError,
   success as userRegisterSuccess,
-} from "./register";
+} from "./slices/register";
+
+import getUserSaga from "./sagas/getUserSaga";
 
 export {
   userGet,
@@ -33,4 +35,5 @@ export {
   userRegisterStop,
   userRegisterError,
   userRegisterSuccess,
+  getUserSaga,
 };
